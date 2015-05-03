@@ -11,6 +11,9 @@ class Lmfit < Formula
     (share/"lmfit/demos").install Dir["demo/*.c"]
   end
 
+  def caveats
+    "Demo sources have been placed in " + (share/"lmfit/demos")
+  end
 
   test do
     # Compile the demo programs from share and check that they exit nonzero
